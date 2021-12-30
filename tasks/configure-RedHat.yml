@@ -1,0 +1,6 @@
+---
+- name: "Ensure Memcached is started and enabled at boot."
+  systemd:
+    name: memcached
+    state: started
+    enabled: yes
